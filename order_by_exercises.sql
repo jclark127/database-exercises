@@ -4,13 +4,16 @@ USE employees;
 
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name,first_name;
+
 
 #SEARCH FOR NAMES THAT START WITH "E"
 
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE last_name LIKE 'E%';
+WHERE last_name LIKE 'E%'
+ORDER BY emp_no DESC;
 
 #SEARCH FOR A "Q"
 
