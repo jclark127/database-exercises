@@ -16,3 +16,7 @@ WHERE last_name LIKE '%Q%'
 AND not (last_name LIKE '%QU%')
 GROUP BY last_name;
 
+SELECT COUNT(*), gender
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+GROUP BY gender;
